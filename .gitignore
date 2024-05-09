@@ -1,0 +1,12 @@
+.DS_Store
+.env
+
+health-client/.DS_Store
+health-client/node_modules
+health-client/.env
+health-client/.env.local
+
+health-server/.DS_Store
+health-server/node_modules
+health-server/.env
+health-server/.env.local
