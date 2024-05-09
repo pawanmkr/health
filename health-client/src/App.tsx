@@ -26,7 +26,7 @@ const App: React.FC = () => {
             const formData = new FormData();
             formData.append('file', uploadedFile);
 
-            const res = await axios.post('http://localhost:6007/upload', formData);
+            const res = await axios.post('https://health-wc5z.onrender.com/upload', formData);
             setFileId(res.data.file_id);
             const headers = _.values(res.data.headers);
             setColumns(headers);
@@ -46,7 +46,7 @@ const App: React.FC = () => {
 
 
     const handleSubmit = async () => {
-        const res = await axios.post('http://localhost:6007/columns/selected', selectedColumns);
+        const res = await axios.post('https://health-wc5z.onrender.com/columns/selected', selectedColumns);
         if (res.status === 200) setSubmitted(true);
     };
 
